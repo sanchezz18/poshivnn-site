@@ -8,7 +8,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i src/input.css -o css/output.css --minify",
+    "build:css": "npx tailwindcss -i src/input.css -o css/output.css --minify",
     "lint": "tailwindcss -i src/input.css -o css/output.css --dry-run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
