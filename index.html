@@ -25,7 +25,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu:wght@500;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <link href="css/output.css" rel="stylesheet">
@@ -33,16 +33,16 @@
   <style>
     /* ─── CSS Variables ────────────────────────── */
     :root {
-      --clr-dark:    #1E1E1E;
-      --clr-accent:  #808000;
-      --clr-accent2: #9a9a00;
-      --clr-light:   #F5F5F5;
+      --clr-dark:    #1A1A1A;
+      --clr-accent:  #1A99AB;
+      --clr-accent2: #48ADBC;
+      --clr-light:   #FFFEF9;
       --clr-white:   #FFFFFF;
-      --clr-text:    #111111;
+      --clr-text:    #1A1A1A;
       --clr-textlt:  #DDDDDD;
-      --clr-muted:   #6B7280;
-      --font-d: 'Montserrat', sans-serif;
-      --font-b: 'Inter', sans-serif;
+      --clr-muted:   #4B4949;
+      --font-d: 'Ubuntu', sans-serif;
+      --font-b: 'Source Sans Pro', sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
@@ -181,7 +181,7 @@
     }
     .hero-logo {
       animation: heroLogoFloat 7s ease-in-out infinite;
-      filter: drop-shadow(0 8px 40px rgba(128,128,0,0.55)) drop-shadow(0 0 90px rgba(128,128,0,0.22));
+      filter: drop-shadow(0 8px 40px rgba(17,99,111,0.55)) drop-shadow(0 0 90px rgba(17,99,111,0.22));
       transform-origin: center;
       max-width: 360px; width: 100%;
     }
@@ -308,7 +308,7 @@
       50%       { background-position: -200% center; }
     }
     .btn-accent {
-      background: linear-gradient(105deg, #808000 0%, #808000 32%, #c0c020 50%, #808000 68%, #808000 100%);
+      background: linear-gradient(105deg, #1A99AB 0%, #1A99AB 32%, #5CD3E6 50%, #1A99AB 68%, #1A99AB 100%);
       background-size: 250% 100%;
       animation: btnShimmer 4.5s ease-in-out infinite;
     }
@@ -331,7 +331,7 @@
     }
     .portfolio-card:hover {
       transform: translateY(-7px) scale(1.015);
-      box-shadow: 0 22px 48px rgba(128,128,0,0.18);
+      box-shadow: 0 22px 48px rgba(17,99,111,0.18);
     }
 
     /* ─── Advantage card hover lift ─────────────── */
@@ -340,13 +340,13 @@
     }
     .adv-card:hover {
       transform: translateY(-8px) rotate(-0.6deg);
-      box-shadow: 0 18px 42px rgba(128,128,0,0.16);
+      box-shadow: 0 18px 42px rgba(17,99,111,0.16);
     }
 
     /* ─── FAB glow pulse ─────────────────────────── */
     @keyframes fabGlow {
-      0%, 100% { box-shadow: 0 4px 18px rgba(128,128,0,0.45); }
-      50%       { box-shadow: 0 6px 28px rgba(128,128,0,0.75), 0 0 0 8px rgba(128,128,0,0.08); }
+      0%, 100% { box-shadow: 0 4px 18px rgba(17,99,111,0.45); }
+      50%       { box-shadow: 0 6px 28px rgba(17,99,111,0.75), 0 0 0 8px rgba(17,99,111,0.08); }
     }
     .fab-glow { animation: fabGlow 3s ease-in-out infinite; }
 
@@ -434,9 +434,9 @@
   ════════════════════════════════════════════════════ -->
   <section id="hero" class="min-h-screen flex items-center" style="position:relative; overflow:hidden; padding-top:64px;
     background:
-      radial-gradient(ellipse 78% 65% at 12% 28%, rgba(128,128,0,0.55) 0%, transparent 62%),
-      radial-gradient(ellipse 55% 50% at 88% 78%, rgba(100,100,0,0.42) 0%, transparent 60%),
-      radial-gradient(ellipse 45% 45% at 50% 50%, rgba(85,85,0,0.26) 0%, transparent 72%),
+      radial-gradient(ellipse 78% 65% at 12% 28%, rgba(17,99,111,0.55) 0%, transparent 62%),
+      radial-gradient(ellipse 55% 50% at 88% 78%, rgba(13,78,87,0.42) 0%, transparent 60%),
+      radial-gradient(ellipse 45% 45% at 50% 50%, rgba(11,66,74,0.26) 0%, transparent 72%),
       #0d0d02;">
 
     <!-- 3D Clothing items (9 items: 3 hoodies + 3 oversized tees + 3 caps) -->
@@ -446,68 +446,68 @@
       <div class="cloth-item" style="left:3%;top:8%;width:115px;--r0:-7deg;--r1:5deg;--dy:-30px;--dur:9s;--del:0s;--op:0.16;">
         <svg viewBox="0 0 120 132" xmlns="http://www.w3.org/2000/svg">
           <!-- тень -->
-          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(45,50,0,0.38)" transform="translate(4,5)"/>
-          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(45,50,0,0.38)" transform="translate(4,5)"/>
-          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(45,50,0,0.38)" transform="translate(4,5)"/>
+          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(7,39,43,0.38)" transform="translate(4,5)"/>
+          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(7,39,43,0.38)" transform="translate(4,5)"/>
+          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(7,39,43,0.38)" transform="translate(4,5)"/>
           <!-- левый рукав (освещён) — длинный -->
-          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(178,178,32,1)"/>
+          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(51,145,159,1)"/>
           <!-- правый рукав (тень) — длинный -->
-          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(82,82,0,1)"/>
+          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(11,64,71,1)"/>
           <!-- тело -->
-          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(128,128,0,1)"/>
+          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(17,99,111,1)"/>
           <!-- полоса света слева -->
-          <rect x="30" y="36" width="6" height="86" fill="rgba(195,195,35,0.55)" rx="1"/>
+          <rect x="30" y="36" width="6" height="86" fill="rgba(56,159,174,0.55)" rx="1"/>
           <!-- капюшон — арка -->
-          <path d="M38 36 Q36 4 60 1 Q84 4 82 36Z" fill="rgba(98,98,0,1)"/>
+          <path d="M38 36 Q36 4 60 1 Q84 4 82 36Z" fill="rgba(13,76,85,1)"/>
           <!-- проём капюшона -->
-          <path d="M44 36 Q42 16 60 13 Q78 16 76 36Z" fill="rgba(52,52,0,1)"/>
+          <path d="M44 36 Q42 16 60 13 Q78 16 76 36Z" fill="rgba(7,40,45,1)"/>
           <!-- манжет левого рукава -->
-          <line x1="1" y1="117" x2="27" y2="117" stroke="rgba(165,165,22,0.5)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="1" y1="117" x2="27" y2="117" stroke="rgba(41,133,146,0.5)" stroke-width="3" stroke-linecap="round"/>
           <!-- манжет правого рукава -->
-          <line x1="119" y1="117" x2="93" y2="117" stroke="rgba(55,55,0,0.6)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="119" y1="117" x2="93" y2="117" stroke="rgba(7,43,48,0.6)" stroke-width="3" stroke-linecap="round"/>
           <!-- кенгуру-карман -->
-          <path d="M40 80 L80 80 L80 102 Q80 105 77 105 L43 105 Q40 105 40 102Z" fill="rgba(95,95,0,1)"/>
-          <line x1="60" y1="80" x2="60" y2="105" stroke="rgba(185,185,30,0.3)" stroke-width="0.9"/>
+          <path d="M40 80 L80 80 L80 102 Q80 105 77 105 L43 105 Q40 105 40 102Z" fill="rgba(13,74,82,1)"/>
+          <line x1="60" y1="80" x2="60" y2="105" stroke="rgba(50,150,165,0.3)" stroke-width="0.9"/>
           <!-- завязки -->
-          <path d="M52 34 Q50 48 48 62" stroke="rgba(228,228,85,0.55)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-          <path d="M68 34 Q70 48 72 62" stroke="rgba(228,228,85,0.55)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M52 34 Q50 48 48 62" stroke="rgba(104,196,209,0.55)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M68 34 Q70 48 72 62" stroke="rgba(104,196,209,0.55)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
           <!-- низ -->
-          <line x1="30" y1="118" x2="90" y2="118" stroke="rgba(182,182,28,0.35)" stroke-width="2.2"/>
+          <line x1="30" y1="118" x2="90" y2="118" stroke="rgba(48,148,162,0.35)" stroke-width="2.2"/>
         </svg>
       </div>
 
       <!-- HOODIE 2 — medium, bottom-left — длинный рукав -->
       <div class="cloth-item" style="left:12%;top:62%;width:82px;--r0:6deg;--r1:-4deg;--dy:-22px;--dur:12s;--del:3s;--op:0.13;">
         <svg viewBox="0 0 120 132" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(175,175,28,1)"/>
-          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(78,78,0,1)"/>
-          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(125,125,0,1)"/>
-          <rect x="30" y="36" width="6" height="86" fill="rgba(192,192,32,0.52)" rx="1"/>
-          <path d="M38 36 Q36 4 60 1 Q84 4 82 36Z" fill="rgba(95,95,0,1)"/>
-          <path d="M44 36 Q42 16 60 13 Q78 16 76 36Z" fill="rgba(50,50,0,1)"/>
-          <line x1="1" y1="117" x2="27" y2="117" stroke="rgba(162,162,20,0.48)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="119" y1="117" x2="93" y2="117" stroke="rgba(52,52,0,0.58)" stroke-width="3" stroke-linecap="round"/>
-          <path d="M40 80 L80 80 L80 102 Q80 105 77 105 L43 105 Q40 105 40 102Z" fill="rgba(90,90,0,1)"/>
-          <path d="M52 34 Q50 48 48 62" stroke="rgba(225,225,82,0.52)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-          <path d="M68 34 Q70 48 72 62" stroke="rgba(225,225,82,0.52)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-          <line x1="30" y1="118" x2="90" y2="118" stroke="rgba(180,180,26,0.32)" stroke-width="2.2"/>
+          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(47,142,156,1)"/>
+          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(10,61,68,1)"/>
+          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(16,97,109,1)"/>
+          <rect x="30" y="36" width="6" height="86" fill="rgba(53,156,171,0.52)" rx="1"/>
+          <path d="M38 36 Q36 4 60 1 Q84 4 82 36Z" fill="rgba(13,74,82,1)"/>
+          <path d="M44 36 Q42 16 60 13 Q78 16 76 36Z" fill="rgba(7,39,43,1)"/>
+          <line x1="1" y1="117" x2="27" y2="117" stroke="rgba(39,130,143,0.48)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="119" y1="117" x2="93" y2="117" stroke="rgba(7,40,45,0.58)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M40 80 L80 80 L80 102 Q80 105 77 105 L43 105 Q40 105 40 102Z" fill="rgba(12,70,78,1)"/>
+          <path d="M52 34 Q50 48 48 62" stroke="rgba(101,193,206,0.52)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M68 34 Q70 48 72 62" stroke="rgba(101,193,206,0.52)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <line x1="30" y1="118" x2="90" y2="118" stroke="rgba(46,146,160,0.32)" stroke-width="2.2"/>
         </svg>
       </div>
 
       <!-- HOODIE 3 — small, right-center — длинный рукав -->
       <div class="cloth-item" style="right:6%;top:52%;width:66px;--r0:-4deg;--r1:8deg;--dy:-18px;--dur:14s;--del:6s;--op:0.11;">
         <svg viewBox="0 0 120 132" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(170,170,26,1)"/>
-          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(75,75,0,1)"/>
-          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(122,122,0,1)"/>
-          <rect x="30" y="36" width="6" height="86" fill="rgba(188,188,28,0.50)" rx="1"/>
-          <path d="M38 36 Q36 4 60 1 Q84 4 82 36Z" fill="rgba(92,92,0,1)"/>
-          <path d="M44 36 Q42 16 60 13 Q78 16 76 36Z" fill="rgba(48,48,0,1)"/>
-          <line x1="1" y1="117" x2="27" y2="117" stroke="rgba(158,158,18,0.45)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="119" y1="117" x2="93" y2="117" stroke="rgba(50,50,0,0.55)" stroke-width="3" stroke-linecap="round"/>
-          <path d="M40 80 L80 80 L80 102 Q80 105 77 105 L43 105 Q40 105 40 102Z" fill="rgba(88,88,0,1)"/>
-          <path d="M52 34 Q50 48 48 62" stroke="rgba(222,222,80,0.5)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-          <path d="M68 34 Q70 48 72 62" stroke="rgba(222,222,80,0.5)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M30 36 L0 50 L2 120 L28 120 L30 52Z" fill="rgba(45,138,151,1)"/>
+          <path d="M90 36 L120 50 L118 120 L92 120 L90 52Z" fill="rgba(10,58,65,1)"/>
+          <rect x="30" y="36" width="60" height="86" rx="2" fill="rgba(16,95,106,1)"/>
+          <rect x="30" y="36" width="6" height="86" fill="rgba(49,152,167,0.50)" rx="1"/>
+          <path d="M38 36 Q36 4 60 1 Q84 4 82 36Z" fill="rgba(12,71,80,1)"/>
+          <path d="M44 36 Q42 16 60 13 Q78 16 76 36Z" fill="rgba(6,37,42,1)"/>
+          <line x1="1" y1="117" x2="27" y2="117" stroke="rgba(36,127,140,0.45)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="119" y1="117" x2="93" y2="117" stroke="rgba(7,39,43,0.55)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M40 80 L80 80 L80 102 Q80 105 77 105 L43 105 Q40 105 40 102Z" fill="rgba(12,68,76,1)"/>
+          <path d="M52 34 Q50 48 48 62" stroke="rgba(99,190,203,0.5)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M68 34 Q70 48 72 62" stroke="rgba(99,190,203,0.5)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
         </svg>
       </div>
 
@@ -515,97 +515,97 @@
       <div class="cloth-item" style="right:4%;top:7%;width:110px;--r0:8deg;--r1:-5deg;--dy:-25px;--dur:10.5s;--del:1.5s;--op:0.14;">
         <svg viewBox="0 0 140 108" xmlns="http://www.w3.org/2000/svg">
           <!-- тень -->
-          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(45,50,0,0.36)" transform="translate(4,5)"/>
-          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(45,50,0,0.36)" transform="translate(4,5)"/>
-          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(45,50,0,0.36)" transform="translate(4,5)"/>
+          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(7,39,43,0.36)" transform="translate(4,5)"/>
+          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(7,39,43,0.36)" transform="translate(4,5)"/>
+          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(7,39,43,0.36)" transform="translate(4,5)"/>
           <!-- левый рукав — ниже локтя, широкий -->
-          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(178,178,32,1)"/>
+          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(51,145,159,1)"/>
           <!-- правый рукав — тень -->
-          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(82,82,0,1)"/>
+          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(11,64,71,1)"/>
           <!-- воротник -->
-          <path d="M55 18 Q70 11 85 18 L80 24 Q70 16 60 24Z" fill="rgba(98,98,0,1)"/>
+          <path d="M55 18 Q70 11 85 18 L80 24 Q70 16 60 24Z" fill="rgba(13,76,85,1)"/>
           <!-- тело оверсайз -->
-          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(128,128,0,1)"/>
+          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(17,99,111,1)"/>
           <!-- полоса света слева -->
-          <rect x="30" y="28" width="6" height="74" fill="rgba(192,192,32,0.52)" rx="1"/>
+          <rect x="30" y="28" width="6" height="74" fill="rgba(53,156,171,0.52)" rx="1"/>
           <!-- рёбра воротника -->
-          <path d="M60 24 Q70 17 80 24" stroke="rgba(185,185,32,0.38)" stroke-width="1.3" fill="none"/>
+          <path d="M60 24 Q70 17 80 24" stroke="rgba(52,151,165,0.38)" stroke-width="1.3" fill="none"/>
           <!-- манжет левого рукава -->
-          <line x1="2" y1="73" x2="26" y2="73" stroke="rgba(165,165,22,0.5)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="2" y1="73" x2="26" y2="73" stroke="rgba(41,133,146,0.5)" stroke-width="3" stroke-linecap="round"/>
           <!-- манжет правого рукава -->
-          <line x1="138" y1="73" x2="114" y2="73" stroke="rgba(55,55,0,0.6)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="138" y1="73" x2="114" y2="73" stroke="rgba(7,43,48,0.6)" stroke-width="3" stroke-linecap="round"/>
           <!-- низ -->
-          <line x1="30" y1="99" x2="110" y2="99" stroke="rgba(210,80,80,0.32)" stroke-width="2"/>
+          <line x1="30" y1="99" x2="110" y2="99" stroke="rgba(97,181,193,0.32)" stroke-width="2"/>
         </svg>
       </div>
 
       <!-- OVERSIZED TEE 2 — medium, center-left — рукав ниже локтя -->
       <div class="cloth-item" style="left:22%;top:22%;width:80px;--r0:-10deg;--r1:4deg;--dy:-20px;--dur:13s;--del:4.5s;--op:0.11;">
         <svg viewBox="0 0 140 108" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(172,172,28,1)"/>
-          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(78,78,0,1)"/>
-          <path d="M55 18 Q70 11 85 18 L80 24 Q70 16 60 24Z" fill="rgba(95,95,0,1)"/>
-          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(125,125,0,1)"/>
-          <rect x="30" y="28" width="6" height="74" fill="rgba(188,188,28,0.50)" rx="1"/>
-          <path d="M60 24 Q70 17 80 24" stroke="rgba(182,182,30,0.35)" stroke-width="1.3" fill="none"/>
-          <line x1="2" y1="73" x2="26" y2="73" stroke="rgba(162,162,20,0.48)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="138" y1="73" x2="114" y2="73" stroke="rgba(52,52,0,0.58)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="30" y1="99" x2="110" y2="99" stroke="rgba(178,178,24,0.28)" stroke-width="2"/>
+          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(47,140,153,1)"/>
+          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(10,61,68,1)"/>
+          <path d="M55 18 Q70 11 85 18 L80 24 Q70 16 60 24Z" fill="rgba(13,74,82,1)"/>
+          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(16,97,109,1)"/>
+          <rect x="30" y="28" width="6" height="74" fill="rgba(49,152,167,0.50)" rx="1"/>
+          <path d="M60 24 Q70 17 80 24" stroke="rgba(50,148,162,0.35)" stroke-width="1.3" fill="none"/>
+          <line x1="2" y1="73" x2="26" y2="73" stroke="rgba(39,130,143,0.48)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="138" y1="73" x2="114" y2="73" stroke="rgba(7,40,45,0.58)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="30" y1="99" x2="110" y2="99" stroke="rgba(44,144,158,0.28)" stroke-width="2"/>
         </svg>
       </div>
 
       <!-- OVERSIZED TEE 3 — small, bottom-center — рукав ниже локтя -->
       <div class="cloth-item" style="left:42%;top:70%;width:63px;--r0:5deg;--r1:-7deg;--dy:-16px;--dur:11s;--del:7s;--op:0.10;">
         <svg viewBox="0 0 140 108" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(165,165,25,1)"/>
-          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(75,75,0,1)"/>
-          <path d="M55 18 Q70 11 85 18 L80 24 Q70 16 60 24Z" fill="rgba(92,92,0,1)"/>
-          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(122,122,0,1)"/>
-          <rect x="30" y="28" width="5" height="74" fill="rgba(185,185,26,0.48)" rx="1"/>
-          <line x1="2" y1="73" x2="26" y2="73" stroke="rgba(158,158,18,0.45)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="138" y1="73" x2="114" y2="73" stroke="rgba(50,50,0,0.55)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 28 L0 40 L4 76 L28 76 L30 42Z" fill="rgba(43,134,147,1)"/>
+          <path d="M110 28 L140 40 L136 76 L112 76 L110 42Z" fill="rgba(10,58,65,1)"/>
+          <path d="M55 18 Q70 11 85 18 L80 24 Q70 16 60 24Z" fill="rgba(12,71,80,1)"/>
+          <path d="M30 28 L30 102 L110 102 L110 28 L85 18 Q70 11 55 18Z" fill="rgba(16,95,106,1)"/>
+          <rect x="30" y="28" width="5" height="74" fill="rgba(47,149,164,0.48)" rx="1"/>
+          <line x1="2" y1="73" x2="26" y2="73" stroke="rgba(36,127,140,0.45)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="138" y1="73" x2="114" y2="73" stroke="rgba(7,39,43,0.55)" stroke-width="3" stroke-linecap="round"/>
         </svg>
       </div>
 
       <!-- CAP 1 — large, right side upper -->
       <div class="cloth-item" style="right:18%;top:14%;width:105px;--r0:5deg;--r1:-6deg;--dy:-22px;--dur:11s;--del:2s;--op:0.13;">
         <svg viewBox="0 0 110 78" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <path d="M12 54 Q10 62 52 66 Q94 62 98 54 Z" fill="rgba(20,0,0,0.7)" transform="translate(2,4)"/>
-          <path d="M32 54 C32 26 88 26 88 54 Z" fill="rgba(52,52,0,1)"/>
-          <path d="M10 54 Q10 20 55 16 Q90 16 88 54 Q62 57 34 57 Z" fill="rgba(148,8,8,1)"/>
-          <path d="M32 28 Q55 13 78 28 Q55 20 32 28Z" fill="rgba(185,50,50,0.6)"/>
-          <line x1="55" y1="16" x2="55" y2="54" stroke="rgba(185,80,80,0.18)" stroke-width="0.8"/>
-          <line x1="32" y1="28" x2="36" y2="54" stroke="rgba(185,80,80,0.15)" stroke-width="0.7"/>
-          <line x1="78" y1="28" x2="74" y2="54" stroke="rgba(185,80,80,0.15)" stroke-width="0.7"/>
-          <path d="M12 54 Q10 62 52 66 Q94 62 88 54 Z" fill="rgba(95,0,0,1)"/>
-          <path d="M20 57 Q52 62 84 57" stroke="rgba(185,80,80,0.22)" stroke-width="0.8" fill="none"/>
-          <circle cx="55" cy="18" r="3.5" fill="rgba(155,30,30,1)" stroke="rgba(210,110,110,0.4)" stroke-width="0.5"/>
-          <path d="M40 54 L70 54" stroke="rgba(95,10,10,1)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-          <path d="M47 54 L63 54" stroke="rgba(130,20,20,1)" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M15 53 Q52 56 88 53" stroke="rgba(185,80,80,0.22)" stroke-width="2" fill="none"/>
+          <path d="M12 54 Q10 62 52 66 Q94 62 98 54 Z" fill="rgba(3,16,17,0.7)" transform="translate(2,4)"/>
+          <path d="M32 54 C32 26 88 26 88 54 Z" fill="rgba(7,40,45,1)"/>
+          <path d="M10 54 Q10 20 55 16 Q90 16 88 54 Q62 57 34 57 Z" fill="rgba(26,117,130,1)"/>
+          <path d="M32 28 Q55 13 78 28 Q55 20 32 28Z" fill="rgba(68,155,167,0.6)"/>
+          <line x1="55" y1="16" x2="55" y2="54" stroke="rgba(94,161,171,0.18)" stroke-width="0.8"/>
+          <line x1="32" y1="28" x2="36" y2="54" stroke="rgba(94,161,171,0.15)" stroke-width="0.7"/>
+          <line x1="78" y1="28" x2="74" y2="54" stroke="rgba(94,161,171,0.15)" stroke-width="0.7"/>
+          <path d="M12 54 Q10 62 52 66 Q94 62 88 54 Z" fill="rgba(13,74,82,1)"/>
+          <path d="M20 57 Q52 62 84 57" stroke="rgba(94,161,171,0.22)" stroke-width="0.8" fill="none"/>
+          <circle cx="55" cy="18" r="3.5" fill="rgba(47,127,139,1)" stroke="rgba(123,188,197,0.4)" stroke-width="0.5"/>
+          <path d="M40 54 L70 54" stroke="rgba(21,76,84,1)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+          <path d="M47 54 L63 54" stroke="rgba(35,105,115,1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M15 53 Q52 56 88 53" stroke="rgba(94,161,171,0.22)" stroke-width="2" fill="none"/>
         </svg>
       </div>
 
       <!-- CAP 2 — medium, left-center -->
       <div class="cloth-item" style="left:8%;top:40%;width:82px;--r0:-6deg;--r1:5deg;--dy:-18px;--dur:9.5s;--del:5s;--op:0.11;">
         <svg viewBox="0 0 110 78" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <path d="M32 54 C32 26 88 26 88 54 Z" fill="rgba(50,50,0,1)"/>
-          <path d="M10 54 Q10 20 55 16 Q90 16 88 54 Q62 57 34 57 Z" fill="rgba(142,6,6,1)"/>
-          <path d="M32 28 Q55 13 78 28 Q55 20 32 28Z" fill="rgba(180,45,45,0.55)"/>
-          <path d="M12 54 Q10 62 52 66 Q94 62 88 54 Z" fill="rgba(90,0,0,1)"/>
-          <circle cx="55" cy="18" r="3.5" fill="rgba(150,28,28,1)" stroke="rgba(205,105,105,0.35)" stroke-width="0.5"/>
-          <path d="M40 54 L70 54" stroke="rgba(90,8,8,1)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+          <path d="M32 54 C32 26 88 26 88 54 Z" fill="rgba(7,39,43,1)"/>
+          <path d="M10 54 Q10 20 55 16 Q90 16 88 54 Q62 57 34 57 Z" fill="rgba(24,112,124,1)"/>
+          <path d="M32 28 Q55 13 78 28 Q55 20 32 28Z" fill="rgba(63,150,162,0.55)"/>
+          <path d="M12 54 Q10 62 52 66 Q94 62 88 54 Z" fill="rgba(12,70,78,1)"/>
+          <circle cx="55" cy="18" r="3.5" fill="rgba(44,123,134,1)" stroke="rgba(118,183,192,0.35)" stroke-width="0.5"/>
+          <path d="M40 54 L70 54" stroke="rgba(19,72,79,1)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
         </svg>
       </div>
 
       <!-- CAP 3 — small, bottom-right -->
       <div class="cloth-item" style="right:28%;top:75%;width:60px;--r0:9deg;--r1:-5deg;--dy:-14px;--dur:10s;--del:1s;--op:0.09;">
         <svg viewBox="0 0 110 78" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <path d="M32 54 C32 26 88 26 88 54 Z" fill="rgba(68,0,0,1)"/>
-          <path d="M10 54 Q10 20 55 16 Q90 16 88 54 Q62 57 34 57 Z" fill="rgba(136,5,5,1)"/>
-          <path d="M32 28 Q55 13 78 28 Q55 20 32 28Z" fill="rgba(175,42,42,0.5)"/>
-          <path d="M12 54 Q10 62 52 66 Q94 62 88 54 Z" fill="rgba(85,0,0,1)"/>
-          <circle cx="55" cy="18" r="3.5" fill="rgba(145,26,26,1)"/>
+          <path d="M32 54 C32 26 88 26 88 54 Z" fill="rgba(9,53,59,1)"/>
+          <path d="M10 54 Q10 20 55 16 Q90 16 88 54 Q62 57 34 57 Z" fill="rgba(22,107,119,1)"/>
+          <path d="M32 28 Q55 13 78 28 Q55 20 32 28Z" fill="rgba(60,145,157,0.5)"/>
+          <path d="M12 54 Q10 62 52 66 Q94 62 88 54 Z" fill="rgba(11,66,74,1)"/>
+          <circle cx="55" cy="18" r="3.5" fill="rgba(42,118,129,1)"/>
         </svg>
       </div>
 
@@ -697,7 +697,7 @@
         <!-- 1: Введение и поддержка (бывший "Русский менеджмент") -->
         <div class="anim-scroll delay-1 adv-card bg-white rounded-xl p-6 shadow-sm">
           <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-4"
-               style="background:rgba(128,128,0,0.08);">
+               style="background:rgba(17,99,111,0.08);">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
               <circle cx="9" cy="7" r="4"/>
@@ -716,7 +716,7 @@
         <!-- 2: Любой тираж -->
         <div class="anim-scroll delay-2 adv-card bg-white rounded-xl p-6 shadow-sm">
           <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-4"
-               style="background:rgba(128,128,0,0.08);">
+               style="background:rgba(17,99,111,0.08);">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="20" x2="12" y2="10"/>
               <line x1="18" y1="20" x2="18" y2="4"/>
@@ -734,7 +734,7 @@
         <!-- 3: Ткани за 2 дня -->
         <div class="anim-scroll delay-3 adv-card bg-white rounded-xl p-6 shadow-sm">
           <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-4"
-               style="background:rgba(128,128,0,0.08);">
+               style="background:rgba(17,99,111,0.08);">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/>
               <polyline points="12 6 12 12 16 14"/>
@@ -751,7 +751,7 @@
         <!-- 4: Переделываем браки (бывший #1) -->
         <div class="anim-scroll delay-4 adv-card bg-white rounded-xl p-6 shadow-sm">
           <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-4"
-               style="background:rgba(128,128,0,0.08);">
+               style="background:rgba(17,99,111,0.08);">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <polyline points="9 12 11 14 15 10"/>
@@ -768,7 +768,7 @@
         <!-- 5: Шьём всё -->
         <div class="anim-scroll delay-5 adv-card bg-white rounded-xl p-6 shadow-sm">
           <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-4"
-               style="background:rgba(128,128,0,0.08);">
+               style="background:rgba(17,99,111,0.08);">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.23z"/>
             </svg>
@@ -962,7 +962,7 @@
               <ul class="flex flex-col gap-3 text-sm mb-8">
                 <li class="flex items-center gap-3">
                   <span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-                        style="background:rgba(128,128,0,0.1);">
+                        style="background:rgba(17,99,111,0.1);">
                     <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
                       <polyline points="1 5 4.5 8.5 11 1" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -971,7 +971,7 @@
                 </li>
                 <li class="flex items-center gap-3">
                   <span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-                        style="background:rgba(128,128,0,0.1);">
+                        style="background:rgba(17,99,111,0.1);">
                     <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
                       <polyline points="1 5 4.5 8.5 11 1" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -980,7 +980,7 @@
                 </li>
                 <li class="flex items-center gap-3">
                   <span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-                        style="background:rgba(128,128,0,0.1);">
+                        style="background:rgba(17,99,111,0.1);">
                     <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
                       <polyline points="1 5 4.5 8.5 11 1" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -989,7 +989,7 @@
                 </li>
                 <li class="flex items-center gap-3">
                   <span class="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-                        style="background:rgba(128,128,0,0.1);">
+                        style="background:rgba(17,99,111,0.1);">
                     <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
                       <polyline points="1 5 4.5 8.5 11 1" stroke="var(--clr-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
