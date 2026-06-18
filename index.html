@@ -1977,15 +1977,27 @@
   }
 
   // 6. Форма обратной связи (#contacts)
-  function handleFormSubmit(e) {
+  async function handleFormSubmit(e) {
     e.preventDefault();
     const form = document.getElementById('contactForm');
     const name = form.querySelector('[name="name"]').value.trim();
     const phone = form.querySelector('[name="phone"]').value.trim();
+    const email = form.querySelector('[name="email"]').value.trim();
+    const note = form.querySelector('[name="note"]').value.trim();
     if (!name || !phone) {
       alert('Пожалуйста, заполните Имя и Телефон');
       return;
     }
+    const btn = form.querySelector('.form-submit');
+    if (btn) btn.disabled = true;
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, email, note, source: 'Форма на странице' })
+      });
+    } catch (err) {}
+    if (btn) btn.disabled = false;
     document.getElementById('formMsg').style.display = 'block';
     form.reset();
     setTimeout(() => { document.getElementById('formMsg').style.display = 'none'; }, 5000);
@@ -2009,15 +2021,27 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
   setTimeout(openPopup, 45000);
 
-  function handlePopupSubmit(e) {
+  async function handlePopupSubmit(e) {
     e.preventDefault();
     const form = document.getElementById('popupForm');
     const name = form.querySelector('[name="name"]').value.trim();
     const phone = form.querySelector('[name="phone"]').value.trim();
+    const email = form.querySelector('[name="email"]').value.trim();
+    const note = form.querySelector('[name="note"]').value.trim();
     if (!name || !phone) {
       alert('Пожалуйста, заполните Имя и Телефон');
       return;
     }
+    const btn = form.querySelector('.form-submit');
+    if (btn) btn.disabled = true;
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, email, note, source: 'Всплывающее окно' })
+      });
+    } catch (err) {}
+    if (btn) btn.disabled = false;
     document.getElementById('popupMsg').style.display = 'block';
     form.reset();
     setTimeout(closePopup, 3000);
